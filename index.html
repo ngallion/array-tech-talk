@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,53 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section style="height: 100%">
+						<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/example.html" data-background-interactive>
+							<p>JavaScript Arrays <br> and Their Functions</p>
+						</section>
+						<section>
+							<h2>What is an array?</h2>
+							<p style="text-align: center">An array is a data structure<br /> that contains a group of elements, <br />each identified by at least one array index, or key.</p>
+							
+						</section>
+						<section>
+							<h2>What is an array...in JavaScript?</h2>
+							<ul style="margin-top: 10px">
+								<li style="margin-top: 10px">JavaScript arrays are mutable, list-like objects that can contain groups of elements of one or many types</li>
+								<li style="margin-top: 10px">All arrays have length</li>
+								<li style="margin-top: 10px">Arrays have a maximum length of 4,294,967,295</li>
+							</ul>
+						</section>
+						<section>
+								<p style="font-weight: 800; font-size: 60px; margin-top: -100px">Arrays sound great! <br> How can I get one?</p>
+								<ul style="margin-top: 10px">
+									<li style="margin-top: 10px">Arrays can be initialized using the new keyword <br> <code style="color:white">const someArray = new Array()</code> <br>or with the array literal <br><code style="color:white">const someOtherArray = []</code></li>
+								</ul>
+							</section>
+						<section style="height: 100%;">
+							<span style="width: 100%;">
+							Arrays are Objects
+							</span>
+							<iframe
+							style="border: solid; height: 100%; width: 100%; background-color: #0E1628;"
+							data-src="https://repl.it/@ngallion/array-typeof?lite=true">
+							</iframe>
+						</section>
+						<section>
+							<h2>Fancy Ways to Create Arrays</h2>
+							<ul style="margin-top: 10px">
+								<li style="margin-top: 10px">ES6 introduced two new ways to create arrays--<code style="color:white">Array.from()</code> and the spread operator <code style="color:white">[...]</code></li>
+								<li style="margin-top: 10px"><code style="color:white">Array.from()</code> can create an array from <em>any</em> object with a length property and indexed elements, while the spread operator only works on objects that implement the <code style="color:white">iterator</code> method</li>
+								<li style="margin-top: 10px"><code style="color:white">someArray.slice()</code> can also create an array from an already existing array</li>
+							</ul>
+						</section>
+				</section>
+				
+				<section style="height: 100%">
+					<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/example2.html" data-background-interactive>
+						<p>Finding Elements within an Array</p>
+					</section>
+				</section>
 			</div>
 		</div>
 
