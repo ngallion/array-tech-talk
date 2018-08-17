@@ -20,12 +20,13 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section style="height: 100%">
-						<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/example.html" data-background-interactive>
+						<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/title-iframe.html" data-background-interactive>
 							<p>JavaScript Arrays <br> and Their Functions</p>
 						</section>
 						<section>
@@ -49,10 +50,10 @@
 							</section>
 						<section style="height: 100%;">
 							<span style="width: 100%;">
-							Arrays are Objects
+							Creating Arrays
 							</span>
 							<iframe
-							style="border: solid; height: 100%; width: 100%; background-color: #0E1628;"
+							style="border: solid; height: 80%; width: 100%; margin-top: 20px; background-color: #0E1628;"
 							data-src="https://repl.it/@ngallion/array-typeof?lite=true">
 							</iframe>
 						</section>
@@ -67,10 +68,27 @@
 				</section>
 				
 				<section style="height: 100%">
-					<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/example2.html" data-background-interactive>
-						<p>Finding Elements within an Array</p>
+					<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/title-2-iframe.html" data-background-interactive>
+						<p>Finding Elements <br> Within Arrays</p>
 					</section>
 				</section>
+				<section>
+						<section style="font-size: 72px; color:black; font-weight: 800" data-background-iframe="assets/title-3-iframe.html" data-background-interactive>
+							<p>Iterating Over <br> Elements Within Arrays</p>
+						</section>
+						<section>
+							<div style="margin-top: -25px; margin-bottom: 25px;">
+								<span>Comparing popularity of <br /> <code style="color: white">map</code>, <code style="color: white">filter</code>, <code style="color: white">reduce</code>, and <code style="color: white">flatmap</code> </span><br/>
+								
+							</div>
+							<div style="height: 100%;">
+							<script type="text/javascript"> 
+								trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"javascript map","geo":"US","time":"today 12-m"},{"keyword":"javascript filter","geo":"US","time":"today 12-m"},{"keyword":"javascript reduce","geo":"US","time":"today 12-m"},{"keyword":"javascript flatmap","geo":"US","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=US&q=javascript%20map,javascript%20filter,javascript%20reduce,javascript%20flatmap&date=today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"});
+							</script> 
+							</div>
+						</section>
+				</section>
+
 			</div>
 		</div>
 
